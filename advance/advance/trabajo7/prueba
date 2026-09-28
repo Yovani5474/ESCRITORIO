@@ -1,0 +1,28 @@
+
+            <label>Sexo:</label>
+
+            <input type="radio" name="sexo" value="masculino"> Masculino
+            <input type="radio" name="sexo" value="femenino"> Femenino
+            
+            <label>Cursos:</label>
+            <input type="checkbox" name="cursos" value="informatica"> Informática
+            <input type="checkbox" name="cursos" value="matematica"> Matemática
+            
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="peru">Perú</option>
+                <option value="colombia">Colombia</option>
+                <option value="bolivia">Bolivia</option>
+            </select>
+            
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+            
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora">
+            
+            <label for="archivo">Seleccione Archivos:</label>
+            <input type="file" id="archivo" name="archivo">

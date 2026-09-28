@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="trabajo3.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <img src="ruta-del-logo.png" alt="UGEL Huancavelica" class="logo">
+            <h1>EcoMarket</h1>
+        </div>
+        <h2>Ingrese sus datos para iniciar sesión</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <span class="icon">&#9993;</span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <span class="icon">&#128274;</span>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Recordar Contraseña</label>
+            </div>
+            <button stype="submit" id="loginButton">Ingresar</button>
+        </form>
+        <div class="links">
+            <a href="#">Trámite Nuevo</a>
+            <a href="#">Libro Reclamos</a>
+            <a href="#">Rastrear Trámite</a>
+        </div>
+    </div>
+    <script src="trabajo3.js"></script>
+</body>
+</html>

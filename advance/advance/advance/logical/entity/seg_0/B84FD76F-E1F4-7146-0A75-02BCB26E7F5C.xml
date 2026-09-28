@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B84FD76F-E1F4-7146-0A75-02BCB26E7F5C" name="DetalleCompra">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:32:36 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FechaCompra" id="7E144F60-2D68-5A11-8730-41C9F38B466D">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:32:53 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodigoFecha" id="AD735FB3-4C4E-10FB-047F-300F41224BED">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:33:46 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DetalleCompra" id="18DB7797-14C3-401E-9E28-27AEC105923F">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:34:10 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

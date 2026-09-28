@@ -28,3 +28,17 @@ Thumbs.db
 # Database
 *.db
 *.sqlite
+
+# Embedded git repositories (ignore nested .git folders)
+**/.git/
+**/.gitignore
+
+# Local files and generated files
+**/Objects.local
+**/ChangeRequests.local
+**/dmd_open.local
+**/Diagrams.local
+**/DDLSelection.local
+**/DeletedMap_*
+**/ExtendedMap*
+**/dl_settings.xml

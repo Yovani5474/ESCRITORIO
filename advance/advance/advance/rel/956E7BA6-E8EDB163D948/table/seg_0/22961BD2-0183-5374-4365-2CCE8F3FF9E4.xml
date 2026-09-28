@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22961BD2-0183-5374-4365-2CCE8F3FF9E4" name="proveedor">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>E66466E9-2497-BB0B-8225-D48516A97F48</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoProveedor" id="F3A9FD48-1602-8843-8BE6-C1E4D302B124">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>F2215D14-B606-3153-1A45-E0E1F5C12DAD</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="CA8CDA81-5F69-0384-B60D-88AE100152F1">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>5991BA7A-D4F8-8831-06D8-60ACFEAD50A3</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="1274D116-AB58-E4BD-AA77-773380963AA3">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>386C390A-F087-382A-BCE3-DC638C5A0434</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proveedor_ID" id="8802ECF2-7CE5-86C4-5BDB-930A9663300D">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>340CEF8D-A1E5-B7D1-3114-AA1C0F4AD250</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTOS_PRODUCTOS_ID" id="CC93701E-9D4B-9E3A-881B-523B2DCAFCE5">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D7F95D9-F055-B264-35C9-AAD33989548C" referredColumn="29215DF0-855C-FCFF-0D2E-D6DAF833285B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="653B0172-164A-6599-A6A7-E3F5931419A4" name="proveedor_PRODUCTOS_FK">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>4BDC2984-DAB5-B2B6-08A1-2C8929A24A89</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC93701E-9D4B-9E3A-881B-523B2DCAFCE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EF6AA2B-724A-EC4E-A433-261CE2B0460D" name="PRODUCTOS">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>578A7553-F7DA-466D-B40A-34CB415FA830</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoProducto" id="24357373-E74B-B32F-F004-3BB027ABC38B">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>A59CC08B-04F3-11B0-BC6B-8184093658F8</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="3375FDFF-1F73-FC15-C84A-1C411FEA419B">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>DE1F7CA2-0BA7-1BD2-7F65-8F3E04CF356E</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Proveedor_ID" id="7E47180A-C00D-03BA-196E-8504281EAC9F">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>713F8D8E-8D24-8CE1-B900-F98ABD303497</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalleCompra" id="9B945807-420C-823F-5BFF-E7A14AE851A1">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>FDEB656A-6F74-84BD-FF16-EECAE0DB250D</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTOS_ID" id="29215DF0-855C-FCFF-0D2E-D6DAF833285B">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="DetalleCompra_DetalleCompra_ID" id="E772F529-CBBD-E20F-E527-BC002DD3AC06">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F7E6EC-60D5-6A2F-7D29-5130B3B419CC" referredColumn="D32012D7-DA50-610B-D6F9-BD7B881DE601"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BEC5CEB-EB71-C0DD-A7FB-45273144F9F6" name="PRODUCTOS_PK">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="29215DF0-855C-FCFF-0D2E-D6DAF833285B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4157A09-73F0-DBFD-21C3-3C52030C4E91" name="PRODUCTOS_DetalleCompra_FK">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>C55AF637-44D5-C233-6B4D-43D801D90404</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E772F529-CBBD-E20F-E527-BC002DD3AC06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

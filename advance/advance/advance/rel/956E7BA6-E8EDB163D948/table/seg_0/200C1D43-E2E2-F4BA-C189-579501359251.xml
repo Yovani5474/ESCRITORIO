@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="200C1D43-E2E2-F4BA-C189-579501359251" name="DetalleCompra">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>B84FD76F-E1F4-7146-0A75-02BCB26E7F5C</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FechaCompra" id="67EBD941-F3D8-A016-8EC7-A1EEFA02378C">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>7E144F60-2D68-5A11-8730-41C9F38B466D</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CodigoFecha" id="55298E82-0CF1-1EA5-8D7B-949C04A9D3E1">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>AD735FB3-4C4E-10FB-047F-300F41224BED</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DetalleCompra" id="6E3F3709-5026-C7A9-8824-80F4AA34E891">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>18DB7797-14C3-401E-9E28-27AEC105923F</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DetalleCompra_ID" id="D32012D7-DA50-610B-D6F9-BD7B881DE601">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Cliente_Cliente_ID" id="98B910B3-E2A8-0AB9-6634-7CB83827EAB5">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F110A2D-9FDF-1ABC-64CD-77285EF99B80" referredColumn="F61D3273-23AC-FDFC-9F15-6B4BC74E6294"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2ECC616E-E585-8D45-4748-D7B2DCCA8F7A" name="DetalleCompra_PK">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D32012D7-DA50-610B-D6F9-BD7B881DE601"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE5405E4-F875-8BB9-71D6-E3A0B0AA9531" name="DetalleCompra_Cliente_FK">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:46:09 UTC</createdTime>
+<generatorID>E91A6403-3305-DE65-C729-5726577211D7</generatorID>
+<ownerDesignName>advance</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98B910B3-E2A8-0AB9-6634-7CB83827EAB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

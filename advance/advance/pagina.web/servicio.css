@@ -1,0 +1,190 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header navigation */
+.header {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2em;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main banner */
+.banner {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 200px 50px;
+    background-image: url('imagene2/BannerTrabajo.jpg');
+    background-size: cover;
+}
+
+/* Product section */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    width: 200px;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover img {
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6);
+}
+
+.product-info {
+    text-align: left;
+    padding: 10px;
+    transition: text-decoration 0.3s;
+}
+
+.product-info:hover {
+    text-decoration: underline;
+}
+
+.title, .description, .price {
+    margin: 5px 0;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Segundo banner */
+.banner.banner2 {
+    background-color: #4c4c4c;
+    padding: 100px 50px;
+    margin-top: 50px;
+    background-image: url('imagene2/Banner2.png'); 
+    background-size: cover;
+}
+
+.products h2 {
+    margin-top: 50px;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-all button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-all button:hover {
+    background-color: #cc0000;
+}
+
+/* División roja */
+.divider {
+    border: none;
+    height: 2px;
+    background-color: red;
+    margin: 50px 0;
+}
+
+/* Sección final */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container h2 {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.suscribirse {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.suscribirse:hover {
+    background-color: darkred;
+}
+
+.disclaimer {
+    text-align: right;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.disclaimer a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}

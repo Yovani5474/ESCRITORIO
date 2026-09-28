@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#banner {
+    background-color: #208720;
+    padding: 50px 0;
+}
+
+#productos h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+/* Estilos personalizados para las imágenes de productos */
+#productos img {
+    border: 2px solid #28a745; /* Color verde similar al botón de enviar */
+    padding: 5px;              /* Espacio entre la imagen y el borde */
+    border-radius: 10px;        /* Bordes ligeramente redondeados */
+}

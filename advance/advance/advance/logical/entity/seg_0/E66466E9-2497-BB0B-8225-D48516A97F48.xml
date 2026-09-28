@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E66466E9-2497-BB0B-8225-D48516A97F48" name="proveedor">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:28:29 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoProveedor" id="F2215D14-B606-3153-1A45-E0E1F5C12DAD">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:28:43 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="5991BA7A-D4F8-8831-06D8-60ACFEAD50A3">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:29:04 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="386C390A-F087-382A-BCE3-DC638C5A0434">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:29:24 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="proveedor_ID" id="340CEF8D-A1E5-B7D1-3114-AA1C0F4AD250">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:29:49 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<engineerTo>
+<item key="956E7BA6-9923-0216-95A4-E8EDB163D948" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

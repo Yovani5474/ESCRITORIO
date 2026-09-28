@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="advance" id="07D10AA4-85CF-9DA5-B880-C81669440B8C" version="3.5">
+<createdBy>PC04</createdBy>
+<createdTime>2024-11-12 19:28:19 UTC</createdTime>
+<ownerDesignName>advance</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>07D10AA4-85CF-9DA5-B880-C81669440B8C</designId>
+</OSDM_Design>
