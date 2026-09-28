@@ -6,7 +6,7 @@ import LoginModal from './LoginModal';
 import RegistroModal from './RegistroModal';
 import NotificationPanel from './NotificationPanel';
 
-const Navbar = () => {
+const Navbar = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const { user, logout, isAdmin } = useAuth();
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showRegistroModal, setShowRegistroModal] = useState(false);
@@ -21,45 +21,56 @@ const Navbar = () => {
     setShowLoginModal(true);
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        <button 
+          className="mobile-menu-toggle"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? '✕' : '☰'}
+        </button>
         <Link to="/" className="navbar-logo">
           🏆 Sistema de Campeonatos
         </Link>
-        <ul className="navbar-menu">
+        <ul className={`navbar-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <li className="navbar-item">
-            <Link to="/" className="navbar-link">Inicio</Link>
+            <Link to="/" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Inicio</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/campeonatos" className="navbar-link">Campeonatos</Link>
+            <Link to="/campeonatos" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Campeonatos</Link>
           </li>
           {isAdmin() && (
             <>
               <li className="navbar-item">
-                <Link to="/usuarios" className="navbar-link">Usuarios</Link>
+                <Link to="/usuarios" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Usuarios</Link>
               </li>
               <li className="navbar-item">
-                <Link to="/equipos" className="navbar-link">Equipos</Link>
+                <Link to="/equipos" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Equipos</Link>
               </li>
             </>
           )}
           <li className="navbar-item">
-            <Link to="/deportes" className="navbar-link">Deportes</Link>
+            <Link to="/deportes" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Deportes</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/canchas" className="navbar-link">Canchas</Link>
+            <Link to="/canchas" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Canchas</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/estadisticas" className="navbar-link">Estadísticas</Link>
+            <Link to="/estadisticas" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Estadísticas</Link>
           </li>
           {isAdmin() && (
             <li className="navbar-item">
-              <Link to="/links" className="navbar-link">Links</Link>
+              <Link to="/links" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Links</Link>
             </li>
           )}
           <li className="navbar-item">
-            <Link to="/perfil" className="navbar-link">Perfil</Link>
+            <Link to="/perfil" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Perfil</Link>
           </li>
         </ul>
         <div className="navbar-auth">
