@@ -17,6 +17,7 @@ const RegistroModal = ({ onClose }) => {
   const [carreras, setCarreras] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [validationErrors, setValidationErrors] = useState({});
 
   useEffect(() => {
     loadCarreras();
@@ -41,11 +42,43 @@ const RegistroModal = ({ onClose }) => {
     return password.length >= 6;
   };
 
+  const validateField = (name, value) => {
+    const errors = { ...validationErrors };
+    
+    switch (name) {
+      case 'id_estudiante':
+        errors.id_estudiante = value.length < 5 ? 'ID debe tener al menos 5 caracteres' : '';
+        break;
+      case 'nombre':
+        errors.nombre = value.length < 2 ? 'Nombre debe tener al menos 2 caracteres' : '';
+        break;
+      case 'apellido':
+        errors.apellido = value.length < 2 ? 'Apellido debe tener al menos 2 caracteres' : '';
+        break;
+      case 'correo':
+        errors.correo = !validateEmail(value) ? 'Solo correos @senati.pe' : '';
+        break;
+      case 'contrasena':
+        errors.contrasena = !validatePassword(value) ? 'Mínimo 6 caracteres' : '';
+        break;
+      case 'contrasena_confirm':
+        errors.contrasena_confirm = value !== formData.contrasena ? 'Las contraseñas no coinciden' : '';
+        break;
+      default:
+        break;
+    }
+    
+    setValidationErrors(errors);
+    return !errors[name];
+  };
+
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     });
+    validateField(name, value);
   };
 
   const handleSubmit = async (e) => {
@@ -118,7 +151,11 @@ const RegistroModal = ({ onClose }) => {
                 onChange={handleChange}
                 placeholder="Ej: 2026001"
                 required
+                className={validationErrors.id_estudiante ? 'input-error' : ''}
               />
+              {validationErrors.id_estudiante && (
+                <span className="error-text">{validationErrors.id_estudiante}</span>
+              )}
             </div>
             <div className="form-group">
               <label>Nombres:</label>
